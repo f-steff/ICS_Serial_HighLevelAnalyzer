@@ -1,0 +1,25 @@
+{
+  "name": "ICS UART Analyzer",
+  "apiVersion": "1.0.0",
+  "author": "Flemming Steffensen",
+  "version": "1.0.0",
+  "description": "Decodes DeskTopLab ICS/ICS++ UART (commands, responses, scope streaming packets).",
+  "extensions": {
+    "ICS_UART_Rx": {
+      "type": "HighLevelAnalyzer",
+      "entryPoint": "HighLevelAnalyzer.HlaRx"
+    },
+    "ICS_UART_Tx": {
+      "type": "HighLevelAnalyzer",
+      "entryPoint": "HighLevelAnalyzer.HlaTx"
+    },
+    "ICS_UART_Tx_RespOnly": {
+      "type": "HighLevelAnalyzer",
+      "entryPoint": "HighLevelAnalyzer.HlaTxRespOnly"
+    },
+    "ICS_UART_Tx_StreamOnly": {
+      "type": "HighLevelAnalyzer",
+      "entryPoint": "HighLevelAnalyzer.HlaTxStreamOnly"
+    }
+  }
+}
